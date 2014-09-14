@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,26 +17,29 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jfD-LF-cmI">
-                                <rect key="frame" x="112" y="118" width="376" height="364"/>
+                                <rect key="frame" x="100" y="120" width="400" height="380"/>
                                 <color key="backgroundColor" red="0.94117647059999998" green="0.44977933679999998" blue="0.38683619879999998" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="jfD-LF-cmI" secondAttribute="trailing" constant="96" id="ag0-1L-Tqe">
-                                <variation key="widthClass=compact" constant="40"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="jfD-LF-cmI" secondAttribute="bottom" constant="100" id="6Ex-AZ-znG">
+                                <variation key="widthClass=compact" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="jfD-LF-cmI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="98" id="h1l-eY-jHS">
-                                <variation key="widthClass=compact" constant="40"/>
+                            <constraint firstItem="jfD-LF-cmI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="100" id="PKh-BT-qhM">
+                                <variation key="widthClass=compact" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="jfD-LF-cmI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="96" id="hJI-gv-o1h">
-                                <variation key="widthClass=compact" constant="40"/>
+                            <constraint firstItem="jfD-LF-cmI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="gKm-bW-M0H">
+                                <variation key="widthClass=compact" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="jfD-LF-cmI" secondAttribute="bottom" constant="118" id="nJ2-iy-cm8">
-                                <variation key="widthClass=compact" constant="40"/>
+                            <constraint firstAttribute="trailing" secondItem="jfD-LF-cmI" secondAttribute="trailing" constant="100" id="x0c-51-Sch">
+                                <variation key="widthClass=compact" constant="0.0"/>
                             </constraint>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mySubview" destination="jfD-LF-cmI" id="3dp-gF-Edf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
