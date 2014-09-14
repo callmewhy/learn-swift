@@ -174,8 +174,6 @@
                                 <variation key="widthClass=compact" constant="40"/>
                             </constraint>
                         </constraints>
-                        <variation key="heightClass=compact"/>
-                        <variation key="widthClass=compact"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
