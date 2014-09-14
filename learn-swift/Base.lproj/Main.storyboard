@@ -37,9 +37,6 @@
                             </constraint>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="mySubview" destination="jfD-LF-cmI" id="3dp-gF-Edf"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

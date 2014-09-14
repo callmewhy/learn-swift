@@ -10,14 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var mySubview: UIView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.preservesSuperviewLayoutMargins = true;
-        mySubview.preservesSuperviewLayoutMargins = true;
-        mySubview.layoutMargins = UIEdgeInsetsZero;
         // Do any additional setup after loading the view, typically from a nib.
     }
 
