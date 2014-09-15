@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
-//  learn-swift
+//  FirstViewController.swift
+//  MyTodoList
 //
-//  Created by why on 9/11/14.
+//  Created by why on 9/15/14.
 //  Copyright (c) 2014 why. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,3 +22,4 @@ class ViewController: UIViewController {
 
 
 }
+

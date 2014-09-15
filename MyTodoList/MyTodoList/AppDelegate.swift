@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  learn-swift
+//  MyTodoList
 //
-//  Created by why on 9/11/14.
+//  Created by why on 9/15/14.
 //  Copyright (c) 2014 why. All rights reserved.
 //
 

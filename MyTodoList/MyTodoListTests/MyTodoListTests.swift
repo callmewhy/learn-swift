@@ -1,15 +1,15 @@
 //
-//  learn_swiftTests.swift
-//  learn-swiftTests
+//  MyTodoListTests.swift
+//  MyTodoListTests
 //
-//  Created by why on 9/11/14.
+//  Created by why on 9/15/14.
 //  Copyright (c) 2014 why. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class learn_swiftTests: XCTestCase {
+class MyTodoListTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
