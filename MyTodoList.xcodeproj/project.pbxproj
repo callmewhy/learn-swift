@@ -14,6 +14,7 @@
 		96D3755D19C7329B00B933E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D3755C19C7329B00B933E0 /* Images.xcassets */; };
 		96D3756019C7329B00B933E0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D3755E19C7329B00B933E0 /* LaunchScreen.xib */; };
 		96D3756C19C7329B00B933E0 /* MyTodoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D3756B19C7329B00B933E0 /* MyTodoListTests.swift */; };
+		96D3757819C7D64B00B933E0 /* TodoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D3757719C7D64B00B933E0 /* TodoManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		96D3756519C7329B00B933E0 /* MyTodoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTodoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D3756A19C7329B00B933E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96D3756B19C7329B00B933E0 /* MyTodoListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTodoListTests.swift; sourceTree = "<group>"; };
+		96D3757719C7D64B00B933E0 /* TodoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				96D3755319C7329B00B933E0 /* AppDelegate.swift */,
 				96D3755519C7329B00B933E0 /* FirstViewController.swift */,
 				96D3755719C7329B00B933E0 /* SecondViewController.swift */,
+				96D3757719C7D64B00B933E0 /* TodoManager.swift */,
 				96D3755919C7329B00B933E0 /* Main.storyboard */,
 				96D3755C19C7329B00B933E0 /* Images.xcassets */,
 				96D3755E19C7329B00B933E0 /* LaunchScreen.xib */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96D3755819C7329B00B933E0 /* SecondViewController.swift in Sources */,
+				96D3757819C7D64B00B933E0 /* TodoManager.swift in Sources */,
 				96D3755419C7329B00B933E0 /* AppDelegate.swift in Sources */,
 				96D3755619C7329B00B933E0 /* FirstViewController.swift in Sources */,
 			);
@@ -409,6 +413,7 @@
 				96D3757119C7329B00B933E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96D3757219C7329B00B933E0 /* Build configuration list for PBXNativeTarget "MyTodoListTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				96D3757419C7329B00B933E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
