@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361p" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Q8I-Nr-Qfr">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qkf-pn-Zns">
+                                <rect key="frame" x="254" y="107" width="91" height="30"/>
+                                <state key="normal" title="Without GCD">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="withoutGCD:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PPh-QQ-6WV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8Y-ku-C0n">
+                                <rect key="frame" x="265" y="250" width="69" height="30"/>
+                                <state key="normal" title="With GCD">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="withGCD:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wbs-dl-IOj"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="3US-pW-RV8">
+                                <rect key="frame" x="281" y="281" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="3US-pW-RV8" secondAttribute="centerY" constant="0.5" id="eyq-S8-eoH"/>
+                            <constraint firstAttribute="centerX" secondItem="3US-pW-RV8" secondAttribute="centerX" constant="0.5" id="gCO-GZ-1ld"/>
+                            <constraint firstAttribute="centerX" secondItem="K8Y-ku-C0n" secondAttribute="centerX" constant="0.5" id="hh4-Nu-dl7"/>
+                            <constraint firstAttribute="centerX" secondItem="Qkf-pn-Zns" secondAttribute="centerX" id="kKD-8U-FqX"/>
+                            <constraint firstItem="K8Y-ku-C0n" firstAttribute="top" secondItem="Qkf-pn-Zns" secondAttribute="bottom" constant="113" id="q2d-S2-kgL"/>
+                            <constraint firstItem="Qkf-pn-Zns" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="87" id="rzK-XA-Tbp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indicatorView" destination="3US-pW-RV8" id="DaB-Wo-Dpt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358" y="992"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qq9-KI-Pr7">
+            <objects>
+                <viewController id="Q8I-Nr-Qfr" customClass="ViewController" customModule="learn_gcd" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="58h-WU-bdb"/>
+                        <viewControllerLayoutGuide type="bottom" id="dIP-ZN-jng"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pmB-xr-O58">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kys-av-EpY">
+                                <rect key="frame" x="254" y="120" width="91" height="30"/>
+                                <state key="normal" title="Without GCD">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="withoutGCD:" destination="Q8I-Nr-Qfr" eventType="touchUpInside" id="Pki-uI-Ang"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riD-c9-fpF">
+                                <rect key="frame" x="265" y="450" width="69" height="30"/>
+                                <state key="normal" title="With GCD">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="withGCD" destination="Q8I-Nr-Qfr" eventType="touchUpInside" id="Xao-Nv-NIF"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="6Ws-so-ipC">
+                                <rect key="frame" x="281" y="281" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="6Ws-so-ipC" secondAttribute="centerY" constant="0.5" id="ITK-aD-GGH"/>
+                            <constraint firstItem="kys-av-EpY" firstAttribute="top" secondItem="58h-WU-bdb" secondAttribute="bottom" constant="100" id="Lek-GB-ymo"/>
+                            <constraint firstAttribute="centerX" secondItem="riD-c9-fpF" secondAttribute="centerX" constant="0.5" id="kzW-t1-07l"/>
+                            <constraint firstAttribute="centerX" secondItem="6Ws-so-ipC" secondAttribute="centerX" constant="0.5" id="lBA-NV-2sf"/>
+                            <constraint firstItem="riD-c9-fpF" firstAttribute="top" secondItem="kys-av-EpY" secondAttribute="bottom" constant="300" id="ntb-Ec-ZQ0"/>
+                            <constraint firstAttribute="centerX" secondItem="kys-av-EpY" secondAttribute="centerX" id="oF1-f4-6fl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indicatorView" destination="6Ws-so-ipC" id="G1k-TR-ULg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GLO-tA-iNE" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
