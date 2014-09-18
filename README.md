@@ -15,7 +15,7 @@
 分支：[todo-list](https://github.com/callmewhy/learn-swift/tree/todo-list)  
 
 
-- GCD 学习笔记
+- GCD 学习笔记    
 参考笔记：[唐巧的技术博客 - 使用GCD](http://blog.devtang.com/blog/2012/02/22/use-gcd/)
 分支：[learn-gcd](https://github.com/callmewhy/learn-swift/tree/gcd-swift-oc)
 
