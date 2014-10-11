@@ -31,7 +31,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Default")
+        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Default")!
         
         cell.textLabel?.text = todoManager.todos[indexPath.row].name
         cell.detailTextLabel?.text = todoManager.todos[indexPath.row].desc
